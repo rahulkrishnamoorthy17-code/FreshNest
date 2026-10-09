@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <defs>
+    <!-- Favicon Background Gradient -->
+    <linearGradient id="fn-fav-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e9291"/>
+      <stop offset="50%" stop-color="#0a7473"/>
+      <stop offset="100%" stop-color="#04383f"/>
+    </linearGradient>
+    
+    <!-- Steam / Energy Gradient -->
+    <linearGradient id="fn-fav-steam" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+
+    <!-- Leaf Gradient -->
+    <linearGradient id="fn-fav-leaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+
+    <!-- Sparkle Gold Gradient -->
+    <linearGradient id="fn-fav-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="40%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Rounded Container with High Contrast Border -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#fn-fav-bg)"/>
+  <rect x="2.5" y="2.5" width="59" height="59" rx="15.5" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+
+  <!-- High-Visibility Roof Structure -->
+  <path d="M13 34.5L32 17.5L51 34.5" stroke="#ffffff" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M19 33.5V47.5C19 49.4 20.6 51 22.5 51H41.5C43.4 51 45 49.4 45 47.5V33.5" stroke="rgba(255,255,255,0.55)" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- Vibrant Rising Steam -->
+  <path d="M26.5 44.5C26.5 38.5 31.5 36.5 31.5 31C31.5 26.5 28.5 24.5 30.5 21" stroke="url(#fn-fav-steam)" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M35.5 44.5C35.5 39.5 39.5 37.5 39.5 33C39.5 29.5 37.5 27.5 38.5 24.5" stroke="url(#fn-fav-steam)" stroke-width="2.4" stroke-linecap="round"/>
+
+  <!-- Crisp Green Leaf -->
+  <path d="M32 46C26.5 46 24.5 40 27.5 35C30.5 30 36.5 28 36.5 28C36.5 28 37.5 35 35.5 40C34.5 43 33.5 46 32 46Z" fill="url(#fn-fav-leaf)"/>
+
+  <!-- Brilliant Gold Sparkle -->
+  <g transform="translate(44, 15)">
+    <path d="M0 -7 C0.6 -1.8 1.8 -0.6 7 0 C1.8 0.6 0.6 1.8 0 7 C-0.6 1.8 -1.8 0.6 -7 0 C-1.8 -0.6 -0.6 -1.8 0 -7 Z" fill="url(#fn-fav-gold)"/>
+    <circle cx="0" cy="0" r="1.5" fill="#ffffff"/>
+  </g>
+</svg>

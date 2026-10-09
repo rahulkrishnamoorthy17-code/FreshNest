@@ -1,0 +1,281 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Search past and upcoming cleaning visits, download demo invoices and book again."><meta property="og:type" content="website"><meta property="og:title" content="Service History | FreshNest"><meta property="og:description" content="Search past and upcoming cleaning visits, download demo invoices and book again."><title>Service History | FreshNest</title><link rel="canonical" href="https://example.com/dashboard/service-history-|-freshnest"><link rel="stylesheet" href="../assets/css/style.css"><link rel="stylesheet" href="../assets/css/extra.css"><script src="../assets/js/main.js" defer></script><script src="../assets/js/dashboard.js" defer></script><style data-original-stylesheet="cta-consistency.css">
+/* FreshNest shared CTA / heading alignment system. */
+:root { --cta-bg:#087f81; --cta-hover:#06686b; --cta-ink:#ffffff; --cta-outline:#087f81; }
+html.dark { --cta-bg:#43cec5; --cta-hover:#71e7dc; --cta-ink:#092d38; --cta-outline:#66ddd3; }
+/* Identical primary action treatment independent of legacy button variant. */
+a.btn.btn-primary, button.btn.btn-primary, a.btn.btn-accent, button.btn.btn-accent, input.btn.btn-primary, input.btn.btn-accent {
+  background:var(--cta-bg); color:var(--cta-ink); border:1px solid var(--cta-bg);
+  border-radius:14px; min-height:46px; padding:11px 22px;
+  font-family:inherit; font-size:.94rem; font-weight:800; letter-spacing:.005em;
+  display:inline-flex; align-items:center; justify-content:center; gap:10px;
+  text-align:center; text-decoration:none; box-shadow:0 8px 20px rgba(3,105,107,.14);
+  transition:background-color .2s ease,border-color .2s ease,transform .2s ease,box-shadow .2s ease;
+}
+a.btn.btn-primary:hover,button.btn.btn-primary:hover,a.btn.btn-accent:hover,button.btn.btn-accent:hover {
+  background:var(--cta-hover);border-color:var(--cta-hover);color:var(--cta-ink);
+  transform:translateY(-2px);box-shadow:0 12px 24px rgba(3,105,107,.22);
+}
+a.btn.btn-outline,button.btn.btn-outline {
+  background:transparent;color:var(--cta-outline);border:1.5px solid var(--cta-outline);
+  border-radius:14px;min-height:46px;padding:11px 22px;font-weight:800;
+  display:inline-flex;align-items:center;justify-content:center;text-align:center;
+}
+a.btn.btn-outline:hover,button.btn.btn-outline:hover {background:var(--surface-alt);color:var(--cta-outline);border-color:var(--cta-outline)}
+/* All center-aligned section introductions are centered as a complete unit. */
+.section-head {display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;text-align:center;}
+.section-head > div {max-width:770px;width:100%;margin-inline:auto;text-align:center;}
+.section-head h2,.section-head p {margin-inline:auto;}
+.section-head > .btn {align-self:center;flex-shrink:0;}
+.center.narrow,.center.narrow h2,.center.narrow p,.center.narrow .eyebrow {text-align:center;}
+.section .narrow.center .cluster,.section .narrow.center .hero-actions {justify-content:center;}
+.cta-wide {text-align:center;}
+.cta-wide h2,.cta-wide h3,.cta-wide p {margin-inline:auto;}
+.cta-wide .cluster,.cta-wide .hero-actions {justify-content:center;}
+/* Cards consistently align their call to action with the content column center. */
+.service-card-body > .btn,.service-card-body > .service-link,
+.service-card > .btn,.info-panel > .btn,.feature-card > .btn,
+.plan-card > .btn,.price-card > .btn {align-self:center;text-align:center;margin-inline:auto;}
+.service-card-body > .service-link {display:inline-flex;justify-content:center;}
+/* Section-specific center alignment without disturbing split-layout / form sections. */
+.center .btn {text-align:center;}
+.center .cluster,.center .tool-row:not(:has(input,select)) {justify-content:center;}
+/* Main action sizing consistent on compact screens. */
+@media(max-width:650px){.section-head{align-items:center;text-align:center;gap:16px}.section-head>div{text-align:center}.section-head>.btn{align-self:center;max-width:100%}.btn{max-width:100%;white-space:normal}}
+@media(prefers-reduced-motion:reduce){a.btn,button.btn{transition:none!important}}
+
+</style><style data-original-stylesheet="responsive-refinements.css">
+/* Consistent, mobile-first layout refinements - avoid horizontal scroll */
+*,*::before,*::after{box-sizing:border-box}
+html,body{max-width:100%}
+body{overflow-x:clip}
+main,section,article,.container,.card,.dash-main{min-width:0}
+img,video,iframe{max-width:100%;height:auto}
+iframe{display:block}
+h1,h2,h3,h4,p{overflow-wrap:break-word}
+.grid>* , .hero-grid>* , .split>* , .content-grid>* , .login-wrap>* , .footer-grid>*{min-width:0}
+.table-scroll{width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.table-scroll table{min-width:580px}
+.site-header,[data-public-header]{position:sticky;top:0;z-index:100}
+/* Centered headings retain centered layouts; two-column editorial copy stays naturally aligned */
+.section-head.center,.narrow.center{text-align:center}
+.section-head.center>div{margin-inline:auto}
+@media(max-width:1024px){
+  .section{padding-block:clamp(48px,6vw,72px)}
+  .hero-grid,.family-hero .hero-grid{gap:clamp(22px,4vw,42px)}
+  .container{width:min(var(--max-width,1200px),calc(100% - 36px))}
+}
+@media(max-width:768px){
+  .section{padding-block:48px}
+  .hero-grid,.family-hero .hero-grid{grid-template-columns:minmax(0,1fr)}
+  .plan-teaser,.cta-grid,.estimator-layout,.faq-layout{grid-template-columns:minmax(0,1fr)}
+  .site-footer .footer-grid{gap:26px}
+  .cta-grid>img{min-height:0;max-height:340px}
+  .dash-content{padding:24px 18px}
+}
+@media(max-width:480px){
+  .container{width:calc(100% - 28px)}
+  .section{padding-block:40px}
+  .home-hero,.family-hero{padding-block:42px 52px}
+  .hero-copy h1{font-size:clamp(2rem,9vw,2.65rem);line-height:1.12}
+  .hero-actions,.trust-row{justify-content:center;max-width:100%}
+  .hero-actions .btn{max-width:100%;white-space:normal;text-align:center}
+  .plan-teaser,.cta-grid,.service-cta{padding:22px 17px}
+  .card{padding:20px}
+  .site-footer{padding-top:48px}
+  .site-footer .footer-grid{grid-template-columns:minmax(0,1fr)}
+  .site-footer .footer-intro,.site-footer .footer-address{grid-column:auto}
+  .dashboard-layout,.dash-main{min-width:0}
+  .dash-content{padding:18px 12px}
+  .dash-topbar{gap:9px}
+  .login-side,.login-form{padding:18px}
+}
+@media(max-width:360px){
+  .container{width:calc(100% - 24px)}
+  .header-inner{gap:5px}
+  .brand-name{font-size:1rem}
+  .brand-tagline{display:none}
+  .header-actions{gap:3px}
+  .header-actions .btn{padding-inline:8px;font-size:.75rem}
+  .site-footer .footer-grid{gap:22px}
+}
+[dir=rtl] .site-footer .footer-address{text-align:start}
+@media(prefers-reduced-motion:reduce){.reveal,.card,.btn{transition:none!important;animation:none!important}}
+
+</style><style data-original-stylesheet="portal-refresh.css">
+/* FreshNest minimal portal chrome and customer dashboard refinement */
+.portal-header{position:sticky;top:0;z-index:60;background:var(--surface);border-bottom:1px solid var(--border);box-shadow:0 8px 24px rgba(8,70,75,.07)}
+.portal-header-inner{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.portal-controls{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.portal-controls .direction-toggle{width:auto;min-width:52px;padding:0 11px;font-weight:800}
+.portal-dashboard{background:var(--bg)}
+.portal-dashboard .dash-sidebar{background:var(--surface);box-shadow:5px 0 28px rgba(7,71,79,.05);border-color:var(--border);padding:24px 19px;display:flex;flex-direction:column}
+.portal-dashboard .dash-nav{margin-top:18px;gap:7px}
+.portal-dashboard .dash-link{min-height:44px;align-items:center;border:1px solid transparent;transition:background .2s ease,color .2s ease,border-color .2s ease}
+.portal-dashboard .dash-link:hover{background:var(--surface-alt);border-color:var(--border)}
+.portal-dashboard .dash-link[aria-current=page]{color:var(--primary);background:var(--surface-alt);border-color:var(--border);font-weight:800}
+.sidebar-divider{border-top:1px solid var(--border);margin-top:23px}
+.sidebar-extras{margin-top:auto;display:grid;gap:12px;padding-top:25px}
+.sidebar-extras .dropdown>.btn{width:100%;justify-content:center}
+.sidebar-extras .dropdown-panel{z-index:95;right:auto;left:0;bottom:calc(100% + 8px);top:auto;max-width:min(320px,80vw)}
+.sidebar-logout{background:transparent;width:100%;text-align:start;cursor:pointer;color:var(--text)}
+.portal-topbar{position:sticky;top:0;z-index:45;background:var(--surface);box-shadow:0 4px 22px rgba(7,71,79,.045);padding:10px clamp(16px,3vw,35px);display:flex;align-items:center;justify-content:space-between;min-height:74px}
+.dash-topbar-left{display:flex;align-items:center;min-width:0}
+.portal-topbar .portal-controls{margin-inline-start:auto}
+.portal-dashboard .dash-content{max-width:1600px;margin:0 auto;padding:clamp(18px,3vw,42px);min-width:0}
+.portal-dashboard .dash-content .card,.portal-dashboard .dash-content .info-panel{border-radius:20px;box-shadow:0 8px 28px rgba(6,79,79,.06);border:1px solid var(--border)}
+.portal-dashboard .dash-content h1{font-size:clamp(1.65rem,3vw,2.7rem);letter-spacing:-.025em}
+.portal-dashboard .dash-content h2{font-size:clamp(1.3rem,2vw,1.8rem)}
+.portal-dashboard .dash-content img{max-width:100%;height:auto}
+.portal-dashboard .dash-content table{width:100%}
+html.dark .portal-dashboard .dash-sidebar,html.dark .portal-topbar{box-shadow:none}
+@media(max-width:1024px){.portal-dashboard .dash-sidebar{z-index:90}.sidebar-extras{margin-top:28px}.portal-dashboard .dash-content{padding:22px}}
+@media(max-width:650px){.portal-header-inner{min-height:66px}.portal-header .brand{font-size:1.14rem}.portal-controls{gap:7px}.portal-dashboard .dash-topbar{flex-wrap:nowrap;min-height:70px}.portal-dashboard .dash-content{padding:16px 13px}.portal-dashboard .dash-content .card{padding:18px}}
+
+.social-btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;font-weight:700}.social-icon{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;flex-shrink:0}.apple-icon{color:#111827}html.dark .apple-icon{color:#f8fafc}.social-btn span:last-child{line-height:1.2}
+
+
+/* Ultra-Premium Minimal dashboard refinement */
+.portal-dashboard .dash-sidebar{
+  background:linear-gradient(180deg, color-mix(in srgb, var(--surface) 92%, white 8%), var(--surface));
+  box-shadow:14px 0 40px -34px rgba(7,71,79,.28);
+}
+html.dark .portal-dashboard .dash-sidebar{background:linear-gradient(180deg, rgba(16,42,52,.98), rgba(16,42,52,.92));}
+.portal-dashboard .dash-link{
+  border-radius:16px;
+  position:relative;
+}
+.portal-dashboard .dash-link[aria-current=page]{box-shadow:0 16px 28px -22px rgba(14,146,145,.55)}
+.portal-dashboard .dash-link[aria-current=page]::before{
+  content:'';position:absolute;inset-inline-start:10px;top:10px;bottom:10px;width:3px;border-radius:99px;background:var(--primary);
+}
+.portal-dashboard .dash-content .card,.portal-dashboard .dash-content .info-panel{
+  background:linear-gradient(180deg, rgba(255,255,255,.98), rgba(255,255,255,.94));
+}
+html.dark .portal-dashboard .dash-content .card,html.dark .portal-dashboard .dash-content .info-panel{
+  background:linear-gradient(180deg, rgba(18,48,59,.98), rgba(16,42,52,.96));
+}
+.portal-dashboard .dash-content .badge{font-weight:800}
+.sidebar-extras .btn,.sidebar-extras .dropdown-panel{box-shadow:var(--premium-shadow)}
+
+</style><style data-original-stylesheet="premium-visual-v2.css">
+/* FreshNest Ultra-Premium Minimal V2: visibly refined styling; no structural or JS changes */
+:root{--premium-line:rgba(14,146,145,.24);--premium-lustre:rgba(255,255,255,.62);--premium-raised:0 14px 38px -22px rgba(11,60,73,.35),0 3px 12px rgba(11,60,73,.065)}
+html.dark{--premium-line:rgba(73,212,205,.29);--premium-lustre:rgba(255,255,255,.04);--premium-raised:0 16px 45px -20px rgba(0,0,0,.75),0 0 0 1px rgba(73,212,205,.10)}
+/* rich but restrained section surfaces */
+main>.section:nth-of-type(even){background-image:linear-gradient(125deg,rgba(14,146,145,.045),transparent 45%,rgba(14,146,145,.045));}
+html.dark main>.section:nth-of-type(even){background-image:linear-gradient(125deg,rgba(73,212,205,.04),transparent 48%,rgba(73,212,205,.025));}
+main .section{isolation:isolate}
+/* clearer visual hierarchy: centered headings remain centered */
+.section-head h2,.narrow h2,.cta-copy h2,.faq-layout h2,.catalog-hero h1,.detail-hero h1{letter-spacing:-.038em;text-wrap:balance}
+.section-head .eyebrow,.narrow .eyebrow,.hero-copy .eyebrow,.catalog-hero .eyebrow{font-weight:800;letter-spacing:.14em}
+/* crisp, unmistakable surface and hover */
+.card,.service-card,.catalog-card,.result-card,.feature-card,.step,.review-card,.fabric-card,.info-panel,.detail-tip,.detail-sidebar,.plan-teaser,.cta-grid,.faq-list,.pricing-card,.plan-card,.dash-content .card,.dash-content .info-panel{border:1px solid var(--premium-line)!important;box-shadow:var(--premium-raised)!important;position:relative;}
+.card:hover,.service-card:hover,.catalog-card:hover,.feature-card:hover,.step:hover,.result-card:hover,.pricing-card:hover,.plan-card:hover{border-color:var(--primary)!important;box-shadow:0 24px 52px -24px rgba(14,146,145,.39),0 4px 18px rgba(11,60,73,.08)!important}
+html.dark .card:hover,html.dark .service-card:hover,html.dark .catalog-card:hover{box-shadow:0 20px 52px -22px rgba(0,0,0,.82),0 0 0 1px var(--primary)!important}
+/* hero photograph receives sophisticated framing without swapping assets */
+.hero-photo::before,.hero-photo::after,.detail-image::before,.detail-image::after{content:none!important;display:none!important}
+.hero-photo>img,.detail-image img{border:0!important;box-shadow:0 20px 52px -28px rgba(11,60,73,.30)!important}
+.hero-float{border:1px solid var(--premium-line)!important;box-shadow:0 22px 46px -23px rgba(11,60,73,.44)!important}
+/* unified buttons remain teal; stronger clarity and touch targets */
+.btn-primary,.btn-accent{border:1px solid rgba(255,255,255,.26)!important;box-shadow:0 11px 24px -12px rgba(14,146,145,.55),inset 0 1px rgba(255,255,255,.22)!important;letter-spacing:.005em}
+.btn-primary:hover,.btn-accent:hover{box-shadow:0 18px 33px -15px rgba(14,146,145,.62)!important;transform:translateY(-2px)}
+.btn-outline{border:1.5px solid var(--primary)!important;box-shadow:none!important}
+.btn-outline:hover{background:var(--surface-alt)}
+/* polished service cards and photo treatments */
+.service-card>img,.catalog-card>img{border-radius:0!important;filter:saturate(1.07) contrast(1.035)}
+.service-card-body,.catalog-card-body{background:linear-gradient(155deg,var(--surface) 70%,var(--surface-alt) 150%)}
+/* small premium details */
+.trust-row span,.badge,.filter-pill{border-color:var(--premium-line)!important}
+.estimate-summary,.plan-tier,.stat-grid>div{border:1px solid var(--premium-line);box-shadow:var(--premium-raised)}
+.input,.select,.textarea{border:1.5px solid var(--border)}
+.input:focus,.select:focus,.textarea:focus{border-color:var(--primary);box-shadow:0 0 0 4px rgba(14,146,145,.14)}
+/* header and footer with clear separators */
+.site-header,.portal-header,.portal-topbar{border-bottom:1px solid var(--premium-line)!important;box-shadow:0 9px 28px -20px rgba(11,60,73,.43)!important}
+.site-footer{border-top:3px solid rgba(73,212,205,.33)}
+.site-footer .footer-heading{font-weight:800;letter-spacing:.025em}
+.site-footer .social-links a{border-color:rgba(146,230,225,.5);border-radius:12px}
+/* dashboard: legible, distinct active navigation and cards */
+.portal-dashboard .dash-sidebar{border-inline-end:1px solid var(--premium-line)!important}
+.portal-dashboard .dash-link[aria-current=page]{box-shadow:inset 3px 0 0 var(--primary),0 6px 20px -16px rgba(14,146,145,.45)!important}
+.portal-dashboard .dash-content .card,.portal-dashboard .dash-content .info-panel{box-shadow:var(--premium-raised)!important}
+/* motion safe */
+@media(prefers-reduced-motion:reduce){.btn,.card,.service-card,.catalog-card,.result-card{transition:none!important;transform:none!important}}
+@media(max-width:760px){.hero-photo::before,.detail-image::before{display:none!important}.card,.service-card,.catalog-card,.result-card,.dash-content .card{box-shadow:0 8px 22px -16px rgba(11,60,73,.32)!important}}
+
+</style><link rel="stylesheet" href="../assets/css/theme-soft-elegant.css"><style data-original-stylesheet="hero-motion-responsive.css">
+/* FreshNest: restrained hero entrances, reduced motion and directional stability. */
+@keyframes fnHeroLift{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fnHeroImage{from{opacity:.35;transform:scale(1.035)}to{opacity:1;transform:scale(1)}}
+@keyframes fnHeroGlow{0%,100%{opacity:.35}50%{opacity:.62}}
+@media (prefers-reduced-motion:no-preference){
+ .home-hero h1,.page-hero h1{animation:fnHeroLift .72s ease-out both}
+ .home-hero .eyebrow,.page-hero .eyebrow{animation:fnHeroLift .54s ease-out both}
+ .home-hero p,.page-hero p{animation:fnHeroLift .75s .13s ease-out both}
+ .home-hero .btn,.page-hero .btn{animation:fnHeroLift .7s .24s ease-out both}
+ .home-hero .hero-photo img,.family-v2-photo img,.family-hero-photo img{animation:fnHeroImage 1.15s ease-out both}
+ .home-hero .hero-photo img,.family-v2-photo img,.family-hero-photo img{transition:transform .5s ease}
+ .home-hero .hero-photo:hover img,.family-v2-photo:hover img,.family-hero-photo:hover img{transform:scale(1.012)}
+}
+@media (prefers-reduced-motion:reduce){.home-hero *, .page-hero *{animation:none!important;transition-duration:.01ms!important}}
+/* All public pages: sign-in action matching the height of adjacent controls */
+.site-header [data-auth-slot]>.btn,.site-header [data-auth-slot] .profile-menu>.btn{min-height:40px;height:40px;display:inline-flex;align-items:center;justify-content:center;padding:0 13px;line-height:1;white-space:nowrap;border-radius:12px;box-sizing:border-box}
+.site-header .header-actions{align-items:center;flex-shrink:0}
+.site-header .header-actions [data-auth-slot]{flex-shrink:0}
+.site-header .header-actions .direction-toggle{height:40px;min-height:40px}
+/* Use logical directions for right-to-left and avoid oversized unbreakable media. */
+body{overflow-wrap:break-word}
+img,svg,video,iframe{max-width:100%}
+.dashboard-layout,.dash-main,.dash-content,.container{min-width:0}
+[dir=rtl] .home-submenu a{text-align:right}
+[dir=rtl] .dropdown-panel a,[dir=rtl] .dropdown-panel button{text-align:right}
+[dir=rtl] .portal-controls{direction:rtl}
+[dir=rtl] .footer-grid,[dir=rtl] .content-grid{text-align:right}
+@media(max-width:1100px) and (min-width:901px){.site-nav{gap:9px}.site-nav .nav-link{font-size:.85rem}.header-inner{gap:12px}}
+@media(max-width:900px){.site-header .site-nav{max-height:calc(100dvh - 78px);overflow-y:auto}.site-header .site-nav .nav-link{min-height:42px;display:flex;align-items:center}.home-submenu{max-width:100%}}
+@media(max-width:650px){.site-header [data-auth-slot]>.btn,.site-header [data-auth-slot] .profile-menu>.btn{min-height:36px;height:36px;padding:0 9px;font-size:.78rem}.site-header .header-actions .direction-toggle{height:36px;min-height:36px}.brand-text{min-width:0}.site-header .header-inner{gap:5px}}
+@media(max-width:390px){.site-header .header-actions{gap:3px}.site-header [data-auth-slot]>.btn{padding:0 7px}.site-header .brand-tagline{letter-spacing:.07em}.site-header .brand-name{font-size:1.02rem}}
+
+</style><style data-original-stylesheet="cross-device-polish.css">
+/* Final cross-device direction and contrast polish; intentionally scoped and additive. */
+:root{color-scheme:light}html.dark{color-scheme:dark}
+html,body{max-width:100%;}body{overflow-x:clip;overflow-wrap:break-word}
+.container,.dashboard-layout,.dash-content,.dash-main,.site-nav,.header-inner,.blog-grid,.blog-feature,.article-detail{min-width:0}
+img,video,iframe{max-width:100%}img{height:auto}button,input,select,textarea{max-width:100%;font:inherit}
+input,select,textarea{color:var(--text);background:var(--surface);border-color:var(--border)}
+input::placeholder,textarea::placeholder{color:var(--muted);opacity:1}
+:focus-visible{outline:3px solid var(--primary);outline-offset:3px}
+[dir=rtl] .site-nav,[dir=rtl] .footer-grid,[dir=rtl] .dash-content{text-align:start}
+[dir=rtl] .home-submenu{left:auto;right:0}
+[dir=rtl] .home-submenu a,[dir=rtl] .dropdown-panel a,[dir=rtl] .dropdown-panel button{text-align:start}
+[dir=rtl] .footer-links,[dir=rtl] .footer-address{text-align:start}
+/* Avoid cards, media and long text driving horizontal scroll. */
+.grid-2>*,.grid-3>*,.content-grid>*,.blog-grid>*,.pricing-grid>*,.leadership-grid>*,.split>*,.article-detail>*,.blog-feature>*{min-width:0}
+.blog-grid .blog-card>img{height:215px!important;width:100%;object-fit:cover}
+@media(max-width:900px){
+ .site-nav.is-open{max-height:calc(100dvh - 74px);overflow-y:auto;overscroll-behavior:contain}
+ .site-nav .nav-link,.site-nav .home-dropdown-trigger{min-height:42px;display:flex;align-items:center}
+ .home-submenu{position:static;max-width:100%}
+ [dir=rtl] .home-submenu{right:auto}
+}
+@media(max-width:700px){
+ .blog-featured-full .blog-feature{grid-template-columns:minmax(0,1fr)}
+ .blog-featured-full .blog-feature>img{min-width:0;max-height:none;height:auto;aspect-ratio:16/10;object-fit:cover}
+ .blog-grid{grid-template-columns:minmax(0,1fr)}
+ .article-detail,.leadership-grid{grid-template-columns:minmax(0,1fr)}
+ .card,.info-panel{max-width:100%}
+ .site-footer .footer-grid{min-width:0}
+}
+@media(max-width:450px){
+ .site-footer .footer-grid{grid-template-columns:minmax(0,1fr)}
+ .header-inner{min-width:0;gap:4px}
+ .brand-text{min-width:0}
+ .header-actions{gap:3px;flex-shrink:0}
+ .site-header [data-auth-slot]>.btn{white-space:nowrap}
+ .site-header .direction-toggle{min-width:37px}
+ .leader-card{gap:12px;padding:16px}
+ .leader-card img{width:72px;height:72px;flex-shrink:0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
+
+</style></head><body><div data-dashboard-shell></div></body></html>

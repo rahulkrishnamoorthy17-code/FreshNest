@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+  <!-- Subtle Cross-Hatch Fabric Weave Impression -->
+  <path d="M0 24H48M24 0V48" stroke="#0e9291" stroke-width="0.5" stroke-opacity="0.04" stroke-dasharray="2 4"/>
+  <circle cx="24" cy="24" r="1" fill="#0e9291" fill-opacity="0.06"/>
+  <circle cx="0" cy="0" r="0.8" fill="#38bdf8" fill-opacity="0.05"/>
+  <circle cx="48" cy="0" r="0.8" fill="#38bdf8" fill-opacity="0.05"/>
+  <circle cx="0" cy="48" r="0.8" fill="#38bdf8" fill-opacity="0.05"/>
+  <circle cx="48" cy="48" r="0.8" fill="#38bdf8" fill-opacity="0.05"/>
+</svg>

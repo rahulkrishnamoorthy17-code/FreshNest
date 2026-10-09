@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 56" width="240" height="56" fill="none">
+  <defs>
+    <!-- Master Background Shield Gradient -->
+    <linearGradient id="fn-full-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e9291"/>
+      <stop offset="45%" stop-color="#0a7473"/>
+      <stop offset="100%" stop-color="#04383f"/>
+    </linearGradient>
+
+    <!-- Glowing Rim Light -->
+    <linearGradient id="fn-full-rim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0d9488" stop-opacity="0.1"/>
+    </linearGradient>
+    
+    <!-- Steam Gradient -->
+    <linearGradient id="fn-full-steam" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+
+    <!-- Leaf Gradient -->
+    <linearGradient id="fn-full-leaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+
+    <!-- Sparkle Gold Gradient -->
+    <linearGradient id="fn-full-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="35%" stop-color="#fef08a"/>
+      <stop offset="75%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left Icon Mark (48x48 inside 56 height) -->
+  <g transform="translate(4, 4)">
+    <rect x="0" y="0" width="48" height="48" rx="14" fill="url(#fn-full-bg)"/>
+    <rect x="0.5" y="0.5" width="47" height="47" rx="13.5" stroke="url(#fn-full-rim)" stroke-width="1.2"/>
+    
+    <!-- House Roof -->
+    <path d="M10 27L24 14.5L38 27" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15 26V37.5C15 39 16.2 40.2 17.7 40.2H30.3C31.8 40.2 33 39 33 37.5V26" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Steam Waves -->
+    <path d="M20 35.5C20 30.5 24 29 24 24.5C24 21 21.5 19.5 23 17" stroke="url(#fn-full-steam)" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M27.5 35.5C27.5 31.5 31 30 31 26.5C31 23.5 29.5 22 30.5 19.5" stroke="url(#fn-full-steam)" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- Leaf Core -->
+    <path d="M24 37C19.5 37 18 32 20.5 28C23 24 28 22.5 28 22.5C28 22.5 29 28 27.5 32C26.5 34.5 25.5 37 24 37Z" fill="url(#fn-full-leaf)" opacity="0.95"/>
+
+    <!-- Gold Shine -->
+    <g transform="translate(34, 12.5)">
+      <path d="M0 -5.5 C0.5 -1.4 1.4 -0.5 5.5 0 C1.4 0.5 0.5 1.4 0 5.5 C-0.5 1.4 -1.4 0.5 -5.5 0 C-1.4 -0.5 -0.5 -1.4 0 -5.5 Z" fill="url(#fn-full-gold)"/>
+      <circle cx="0" cy="0" r="1.1" fill="#ffffff"/>
+    </g>
+  </g>
+
+  <!-- Typography: Wordmark + Tagline -->
+  <g transform="translate(62, 0)">
+    <!-- Primary Brand Wordmark -->
+    <text x="0" y="32" font-family="'Outfit', system-ui, -apple-system, sans-serif" font-weight="800" font-size="25" fill="#0b3c49" letter-spacing="-0.02em">Fresh<tspan fill="#0e9291">Nest</tspan></text>
+    
+    <!-- Tagline Sub-heading -->
+    <text x="1" y="46" font-family="'Inter', system-ui, -apple-system, sans-serif" font-weight="700" font-size="9" fill="#0e9291" letter-spacing="0.16em">STEAM CLEANING</text>
+  </g>
+</svg>

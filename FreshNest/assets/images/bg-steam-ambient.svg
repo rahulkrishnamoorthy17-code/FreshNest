@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" fill="none">
+  <defs>
+    <!-- Soft Cyan/Teal Steam Glow -->
+    <linearGradient id="steam-ribbon-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e9291" stop-opacity="0.16"/>
+      <stop offset="40%" stop-color="#38bdf8" stop-opacity="0.10"/>
+      <stop offset="80%" stop-color="#2dd4bf" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Warm Amber/Gold Ambient Glow -->
+    <linearGradient id="steam-ribbon-2" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ffb703" stop-opacity="0.09"/>
+      <stop offset="50%" stop-color="#0e9291" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Luminous Radial Steam Orbs -->
+    <radialGradient id="steam-orb-1" cx="25%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.22"/>
+      <stop offset="50%" stop-color="#0e9291" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0e9291" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="steam-orb-2" cx="82%" cy="65%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.18"/>
+      <stop offset="60%" stop-color="#064e56" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#064e56" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="steam-orb-center" cx="50%" cy="40%" r="45%">
+      <stop offset="0%" stop-color="#a7f3d0" stop-opacity="0.12"/>
+      <stop offset="70%" stop-color="#14b8a6" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Linear Flow Mask for Silky Edges -->
+    <linearGradient id="flow-fade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="80%" stop-color="#ffffff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Radiant Mist Base -->
+  <rect x="0" y="0" width="1440" height="900" fill="url(#steam-orb-1)"/>
+  <rect x="0" y="0" width="1440" height="900" fill="url(#steam-orb-2)"/>
+  <rect x="0" y="0" width="1440" height="900" fill="url(#steam-orb-center)"/>
+
+  <!-- Fluid Steam Ribbon Flow 1 -->
+  <path d="M-100 240 C 260 110, 580 390, 980 180 C 1220 70, 1420 310, 1600 250 L 1600 900 L -100 900 Z" fill="url(#steam-ribbon-1)"/>
+
+  <!-- Fluid Steam Ribbon Flow 2 -->
+  <path d="M-60 490 C 220 340, 680 660, 1120 410 C 1330 290, 1480 490, 1640 440 L 1640 900 L -60 900 Z" fill="url(#steam-ribbon-2)"/>
+
+  <!-- Elegant Delicate Steam Swirls -->
+  <path d="M120 180 C 280 80, 420 220, 560 140 C 680 70, 780 160, 920 110" stroke="rgba(45,212,191,0.22)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M340 320 C 520 210, 700 380, 890 280 C 1020 210, 1180 320, 1340 240" stroke="rgba(56,189,248,0.18)" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M50 480 C 220 380, 390 520, 610 430 C 760 370, 910 460, 1100 390" stroke="rgba(14,146,145,0.15)" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+
+  <!-- Soft Ambient Bokeh Droplets -->
+  <g fill="#2dd4bf">
+    <circle cx="180" cy="160" r="4" opacity="0.35"/>
+    <circle cx="260" cy="240" r="2.5" opacity="0.45"/>
+    <circle cx="480" cy="110" r="3" opacity="0.3"/>
+    <circle cx="680" cy="190" r="2" opacity="0.4"/>
+    <circle cx="840" cy="250" r="3.5" opacity="0.35"/>
+    <circle cx="1080" cy="140" r="4" opacity="0.3"/>
+    <circle cx="1220" cy="220" r="2" opacity="0.5"/>
+    <circle cx="1340" cy="290" r="3" opacity="0.4"/>
+    <circle cx="360" cy="440" r="3" opacity="0.25"/>
+    <circle cx="720" cy="480" r="2.5" opacity="0.3"/>
+    <circle cx="980" cy="510" r="3.5" opacity="0.35"/>
+    <circle cx="1260" cy="430" r="2" opacity="0.4"/>
+  </g>
+
+  <!-- Luminous Golden Sparkle Micro Elements -->
+  <g fill="#f59e0b" opacity="0.3">
+    <circle cx="310" cy="190" r="1.5"/>
+    <circle cx="620" cy="140" r="1.8"/>
+    <circle cx="940" cy="210" r="1.5"/>
+    <circle cx="1160" cy="170" r="1.8"/>
+    <circle cx="850" cy="380" r="1.5"/>
+  </g>
+</svg>

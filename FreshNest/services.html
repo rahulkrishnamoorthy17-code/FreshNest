@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/>
+<link href="assets/icons/favicon.svg" rel="icon" type="image/svg+xml"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="Explore carpet extraction, sofa cleaning, mattress care, pet odor treatment and more. Browse upfront starting prices and book with FreshNest." name="description"/><meta content="website" property="og:type"/><meta content="Steam Cleaning Services in Coimbatore | FreshNest" property="og:title"/><meta content="Explore carpet extraction, sofa cleaning, mattress care, pet odor treatment and more. Browse upfront starting prices and book with FreshNest." property="og:description"/><link href="https://example.com/services.html" rel="canonical"/><title>Steam Cleaning Services in Coimbatore | FreshNest</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Outfit:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="assets/css/style.css" rel="stylesheet"/><link href="assets/css/services.css" rel="stylesheet"/><script defer="" src="assets/js/main.js"></script><script defer="" src="assets/js/services-data.js"></script><script defer="" src="assets/js/services.js"></script><style data-original-stylesheet="cta-consistency.css">
+/* FreshNest shared CTA / heading alignment system. */
+:root { --cta-bg:#087f81; --cta-hover:#06686b; --cta-ink:#ffffff; --cta-outline:#087f81; }
+html.dark { --cta-bg:#43cec5; --cta-hover:#71e7dc; --cta-ink:#092d38; --cta-outline:#66ddd3; }
+/* Identical primary action treatment independent of legacy button variant. */
+a.btn.btn-primary, button.btn.btn-primary, a.btn.btn-accent, button.btn.btn-accent, input.btn.btn-primary, input.btn.btn-accent {
+  background:var(--cta-bg); color:var(--cta-ink); border:1px solid var(--cta-bg);
+  border-radius:14px; min-height:46px; padding:11px 22px;
+  font-family:inherit; font-size:.94rem; font-weight:800; letter-spacing:.005em;
+  display:inline-flex; align-items:center; justify-content:center; gap:10px;
+  text-align:center; text-decoration:none; box-shadow:0 8px 20px rgba(3,105,107,.14);
+  transition:background-color .2s ease,border-color .2s ease,transform .2s ease,box-shadow .2s ease;
+}
+a.btn.btn-primary:hover,button.btn.btn-primary:hover,a.btn.btn-accent:hover,button.btn.btn-accent:hover {
+  background:var(--cta-hover);border-color:var(--cta-hover);color:var(--cta-ink);
+  transform:translateY(-2px);box-shadow:0 12px 24px rgba(3,105,107,.22);
+}
+a.btn.btn-outline,button.btn.btn-outline {
+  background:transparent;color:var(--cta-outline);border:1.5px solid var(--cta-outline);
+  border-radius:14px;min-height:46px;padding:11px 22px;font-weight:800;
+  display:inline-flex;align-items:center;justify-content:center;text-align:center;
+}
+a.btn.btn-outline:hover,button.btn.btn-outline:hover {background:var(--surface-alt);color:var(--cta-outline);border-color:var(--cta-outline)}
+/* All center-aligned section introductions are centered as a complete unit. */
+.section-head {display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;text-align:center;}
+.section-head > div {max-width:770px;width:100%;margin-inline:auto;text-align:center;}
+.section-head h2,.section-head p {margin-inline:auto;}
+.section-head > .btn {align-self:center;flex-shrink:0;}
+.center.narrow,.center.narrow h2,.center.narrow p,.center.narrow .eyebrow {text-align:center;}
+.section .narrow.center .cluster,.section .narrow.center .hero-actions {justify-content:center;}
+.cta-wide {text-align:center;}
+.cta-wide h2,.cta-wide h3,.cta-wide p {margin-inline:auto;}
+.cta-wide .cluster,.cta-wide .hero-actions {justify-content:center;}
+/* Cards consistently align their call to action with the content column center. */
+.service-card-body > .btn,.service-card-body > .service-link,
+.service-card > .btn,.info-panel > .btn,.feature-card > .btn,
+.plan-card > .btn,.price-card > .btn {align-self:center;text-align:center;margin-inline:auto;}
+.service-card-body > .service-link {display:inline-flex;justify-content:center;}
+/* Section-specific center alignment without disturbing split-layout / form sections. */
+.center .btn {text-align:center;}
+.center .cluster,.center .tool-row:not(:has(input,select)) {justify-content:center;}
+/* Main action sizing consistent on compact screens. */
+@media(max-width:650px){.section-head{align-items:center;text-align:center;gap:16px}.section-head>div{text-align:center}.section-head>.btn{align-self:center;max-width:100%}.btn{max-width:100%;white-space:normal}}
+@media(prefers-reduced-motion:reduce){a.btn,button.btn{transition:none!important}}
+
+</style><style data-original-stylesheet="hero-alignment.css">
+/* FreshNest targeted hero alignment - keeps the original section designs intact. */
+/* Supporting pages: all hero copy, headings and actions centered. */
+.page-hero > .container,
+.catalog-hero > .container,
+.detail-hero > .container {text-align:center;}
+.page-hero h1,.page-hero p,.page-hero .eyebrow,
+.catalog-hero h1,.catalog-hero p,.catalog-hero .eyebrow,
+.detail-hero h1,.detail-hero p,.detail-hero .eyebrow {text-align:center;margin-inline:auto;}
+.page-hero .cluster,.catalog-hero .cluster,.detail-hero .cluster,
+.page-hero .hero-actions,.catalog-hero .hero-actions,.detail-hero .hero-actions {justify-content:center;align-items:center;}
+/* Service details uses a central editorial stack so its photo does not pull its title to one side. */
+.detail-hero .detail-hero-grid {grid-template-columns:minmax(0,1fr);justify-items:center;gap:30px;}
+.detail-hero .detail-hero-grid > * {width:100%;max-width:800px;min-width:0;text-align:center;}
+.detail-hero .detail-hero-grid img {max-width:750px;width:100%;margin-inline:auto;display:block;}
+.detail-hero .detail-tags {justify-content:center;}
+/* Both homepages: center only the hero heading and CTAs; preserve the split photo layout. */
+.home-hero .hero-copy h1 {text-align:center;margin-inline:auto;}
+.home-hero .hero-copy .hero-actions {justify-content:center;}
+.family-hero .grid > div:first-child > h1 {text-align:center;margin-inline:auto;}
+.family-hero .grid > div:first-child > .cluster {justify-content:center;}
+@media(max-width:650px){
+ .page-hero,.catalog-hero,.detail-hero {text-align:center;}
+ .detail-hero .detail-hero-grid{gap:22px;}
+ .home-hero .hero-copy .hero-actions,.family-hero .grid > div:first-child > .cluster{flex-wrap:wrap;}
+}
+
+</style><style data-original-stylesheet="responsive-refinements.css">
+/* Consistent, mobile-first layout refinements - avoid horizontal scroll */
+*,*::before,*::after{box-sizing:border-box}
+html,body{max-width:100%}
+body{overflow-x:clip}
+main,section,article,.container,.card,.dash-main{min-width:0}
+img,video,iframe{max-width:100%;height:auto}
+iframe{display:block}
+h1,h2,h3,h4,p{overflow-wrap:break-word}
+.grid>* , .hero-grid>* , .split>* , .content-grid>* , .login-wrap>* , .footer-grid>*{min-width:0}
+.table-scroll{width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.table-scroll table{min-width:580px}
+.site-header,[data-public-header]{position:sticky;top:0;z-index:100}
+/* Centered headings retain centered layouts; two-column editorial copy stays naturally aligned */
+.section-head.center,.narrow.center{text-align:center}
+.section-head.center>div{margin-inline:auto}
+@media(max-width:1024px){
+  .section{padding-block:clamp(48px,6vw,72px)}
+  .hero-grid,.family-hero .hero-grid{gap:clamp(22px,4vw,42px)}
+  .container{width:min(var(--max-width,1200px),calc(100% - 36px))}
+}
+@media(max-width:768px){
+  .section{padding-block:48px}
+  .hero-grid,.family-hero .hero-grid{grid-template-columns:minmax(0,1fr)}
+  .plan-teaser,.cta-grid,.estimator-layout,.faq-layout{grid-template-columns:minmax(0,1fr)}
+  .site-footer .footer-grid{gap:26px}
+  .cta-grid>img{min-height:0;max-height:340px}
+  .dash-content{padding:24px 18px}
+}
+@media(max-width:480px){
+  .container{width:calc(100% - 28px)}
+  .section{padding-block:40px}
+  .home-hero,.family-hero{padding-block:42px 52px}
+  .hero-copy h1{font-size:clamp(2rem,9vw,2.65rem);line-height:1.12}
+  .hero-actions,.trust-row{justify-content:center;max-width:100%}
+  .hero-actions .btn{max-width:100%;white-space:normal;text-align:center}
+  .plan-teaser,.cta-grid,.service-cta{padding:22px 17px}
+  .card{padding:20px}
+  .site-footer{padding-top:48px}
+  .site-footer .footer-grid{grid-template-columns:minmax(0,1fr)}
+  .site-footer .footer-intro,.site-footer .footer-address{grid-column:auto}
+  .dashboard-layout,.dash-main{min-width:0}
+  .dash-content{padding:18px 12px}
+  .dash-topbar{gap:9px}
+  .login-side,.login-form{padding:18px}
+}
+@media(max-width:360px){
+  .container{width:calc(100% - 24px)}
+  .header-inner{gap:5px}
+  .brand-name{font-size:1rem}
+  .brand-tagline{display:none}
+  .header-actions{gap:3px}
+  .header-actions .btn{padding-inline:8px;font-size:.75rem}
+  .site-footer .footer-grid{gap:22px}
+}
+[dir=rtl] .site-footer .footer-address{text-align:start}
+@media(prefers-reduced-motion:reduce){.reveal,.card,.btn{transition:none!important;animation:none!important}}
+
+</style><style data-original-stylesheet="premium-visual-v2.css">
+/* FreshNest Ultra-Premium Minimal V2: visibly refined styling; no structural or JS changes */
+:root{--premium-line:rgba(14,146,145,.24);--premium-lustre:rgba(255,255,255,.62);--premium-raised:0 14px 38px -22px rgba(11,60,73,.35),0 3px 12px rgba(11,60,73,.065)}
+html.dark{--premium-line:rgba(73,212,205,.29);--premium-lustre:rgba(255,255,255,.04);--premium-raised:0 16px 45px -20px rgba(0,0,0,.75),0 0 0 1px rgba(73,212,205,.10)}
+/* rich but restrained section surfaces */
+main>.section:nth-of-type(even){background-image:linear-gradient(125deg,rgba(14,146,145,.045),transparent 45%,rgba(14,146,145,.045));}
+html.dark main>.section:nth-of-type(even){background-image:linear-gradient(125deg,rgba(73,212,205,.04),transparent 48%,rgba(73,212,205,.025));}
+main .section{isolation:isolate}
+/* clearer visual hierarchy: centered headings remain centered */
+.section-head h2,.narrow h2,.cta-copy h2,.faq-layout h2,.catalog-hero h1,.detail-hero h1{letter-spacing:-.038em;text-wrap:balance}
+.section-head .eyebrow,.narrow .eyebrow,.hero-copy .eyebrow,.catalog-hero .eyebrow{font-weight:800;letter-spacing:.14em}
+/* crisp, unmistakable surface and hover */
+.card,.service-card,.catalog-card,.result-card,.feature-card,.step,.review-card,.fabric-card,.info-panel,.detail-tip,.detail-sidebar,.plan-teaser,.cta-grid,.faq-list,.pricing-card,.plan-card,.dash-content .card,.dash-content .info-panel{border:1px solid var(--premium-line)!important;box-shadow:var(--premium-raised)!important;position:relative;}
+.card:hover,.service-card:hover,.catalog-card:hover,.feature-card:hover,.step:hover,.result-card:hover,.pricing-card:hover,.plan-card:hover{border-color:var(--primary)!important;box-shadow:0 24px 52px -24px rgba(14,146,145,.39),0 4px 18px rgba(11,60,73,.08)!important}
+html.dark .card:hover,html.dark .service-card:hover,html.dark .catalog-card:hover{box-shadow:0 20px 52px -22px rgba(0,0,0,.82),0 0 0 1px var(--primary)!important}
+/* hero photograph receives sophisticated framing without swapping assets */
+.hero-photo::before,.hero-photo::after,.detail-image::before,.detail-image::after{content:none!important;display:none!important}
+.hero-photo>img,.detail-image img{border:0!important;box-shadow:0 20px 52px -28px rgba(11,60,73,.30)!important}
+.hero-float{border:1px solid var(--premium-line)!important;box-shadow:0 22px 46px -23px rgba(11,60,73,.44)!important}
+/* unified buttons remain teal; stronger clarity and touch targets */
+.btn-primary,.btn-accent{border:1px solid rgba(255,255,255,.26)!important;box-shadow:0 11px 24px -12px rgba(14,146,145,.55),inset 0 1px rgba(255,255,255,.22)!important;letter-spacing:.005em}
+.btn-primary:hover,.btn-accent:hover{box-shadow:0 18px 33px -15px rgba(14,146,145,.62)!important;transform:translateY(-2px)}
+.btn-outline{border:1.5px solid var(--primary)!important;box-shadow:none!important}
+.btn-outline:hover{background:var(--surface-alt)}
+/* polished service cards and photo treatments */
+.service-card>img,.catalog-card>img{border-radius:0!important;filter:saturate(1.07) contrast(1.035)}
+.service-card-body,.catalog-card-body{background:linear-gradient(155deg,var(--surface) 70%,var(--surface-alt) 150%)}
+/* small premium details */
+.trust-row span,.badge,.filter-pill{border-color:var(--premium-line)!important}
+.estimate-summary,.plan-tier,.stat-grid>div{border:1px solid var(--premium-line);box-shadow:var(--premium-raised)}
+.input,.select,.textarea{border:1.5px solid var(--border)}
+.input:focus,.select:focus,.textarea:focus{border-color:var(--primary);box-shadow:0 0 0 4px rgba(14,146,145,.14)}
+/* header and footer with clear separators */
+.site-header,.portal-header,.portal-topbar{border-bottom:1px solid var(--premium-line)!important;box-shadow:0 9px 28px -20px rgba(11,60,73,.43)!important}
+.site-footer{border-top:3px solid rgba(73,212,205,.33)}
+.site-footer .footer-heading{font-weight:800;letter-spacing:.025em}
+.site-footer .social-links a{border-color:rgba(146,230,225,.5);border-radius:12px}
+/* dashboard: legible, distinct active navigation and cards */
+.portal-dashboard .dash-sidebar{border-inline-end:1px solid var(--premium-line)!important}
+.portal-dashboard .dash-link[aria-current=page]{box-shadow:inset 3px 0 0 var(--primary),0 6px 20px -16px rgba(14,146,145,.45)!important}
+.portal-dashboard .dash-content .card,.portal-dashboard .dash-content .info-panel{box-shadow:var(--premium-raised)!important}
+/* motion safe */
+@media(prefers-reduced-motion:reduce){.btn,.card,.service-card,.catalog-card,.result-card{transition:none!important;transform:none!important}}
+@media(max-width:760px){.hero-photo::before,.detail-image::before{display:none!important}.card,.service-card,.catalog-card,.result-card,.dash-content .card{box-shadow:0 8px 22px -16px rgba(11,60,73,.32)!important}}
+
+</style><link rel="stylesheet" href="assets/css/theme-soft-elegant.css"><style data-original-stylesheet="hero-motion-responsive.css">
+/* FreshNest: restrained hero entrances, reduced motion and directional stability. */
+@keyframes fnHeroLift{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fnHeroImage{from{opacity:.35;transform:scale(1.035)}to{opacity:1;transform:scale(1)}}
+@keyframes fnHeroGlow{0%,100%{opacity:.35}50%{opacity:.62}}
+@media (prefers-reduced-motion:no-preference){
+ .home-hero h1,.page-hero h1{animation:fnHeroLift .72s ease-out both}
+ .home-hero .eyebrow,.page-hero .eyebrow{animation:fnHeroLift .54s ease-out both}
+ .home-hero p,.page-hero p{animation:fnHeroLift .75s .13s ease-out both}
+ .home-hero .btn,.page-hero .btn{animation:fnHeroLift .7s .24s ease-out both}
+ .home-hero .hero-photo img,.family-v2-photo img,.family-hero-photo img{animation:fnHeroImage 1.15s ease-out both}
+ .home-hero .hero-photo img,.family-v2-photo img,.family-hero-photo img{transition:transform .5s ease}
+ .home-hero .hero-photo:hover img,.family-v2-photo:hover img,.family-hero-photo:hover img{transform:scale(1.012)}
+}
+@media (prefers-reduced-motion:reduce){.home-hero *, .page-hero *{animation:none!important;transition-duration:.01ms!important}}
+/* All public pages: sign-in action matching the height of adjacent controls */
+.site-header [data-auth-slot]>.btn,.site-header [data-auth-slot] .profile-menu>.btn{min-height:40px;height:40px;display:inline-flex;align-items:center;justify-content:center;padding:0 13px;line-height:1;white-space:nowrap;border-radius:12px;box-sizing:border-box}
+.site-header .header-actions{align-items:center;flex-shrink:0}
+.site-header .header-actions [data-auth-slot]{flex-shrink:0}
+.site-header .header-actions .direction-toggle{height:40px;min-height:40px}
+/* Use logical directions for right-to-left and avoid oversized unbreakable media. */
+body{overflow-wrap:break-word}
+img,svg,video,iframe{max-width:100%}
+.dashboard-layout,.dash-main,.dash-content,.container{min-width:0}
+[dir=rtl] .home-submenu a{text-align:right}
+[dir=rtl] .dropdown-panel a,[dir=rtl] .dropdown-panel button{text-align:right}
+[dir=rtl] .portal-controls{direction:rtl}
+[dir=rtl] .footer-grid,[dir=rtl] .content-grid{text-align:right}
+@media(max-width:1100px) and (min-width:901px){.site-nav{gap:9px}.site-nav .nav-link{font-size:.85rem}.header-inner{gap:12px}}
+@media(max-width:900px){.site-header .site-nav{max-height:calc(100dvh - 78px);overflow-y:auto}.site-header .site-nav .nav-link{min-height:42px;display:flex;align-items:center}.home-submenu{max-width:100%}}
+@media(max-width:650px){.site-header [data-auth-slot]>.btn,.site-header [data-auth-slot] .profile-menu>.btn{min-height:36px;height:36px;padding:0 9px;font-size:.78rem}.site-header .header-actions .direction-toggle{height:36px;min-height:36px}.brand-text{min-width:0}.site-header .header-inner{gap:5px}}
+@media(max-width:390px){.site-header .header-actions{gap:3px}.site-header [data-auth-slot]>.btn{padding:0 7px}.site-header .brand-tagline{letter-spacing:.07em}.site-header .brand-name{font-size:1.02rem}}
+
+</style><style data-original-stylesheet="visible-motion.css">
+/* FreshNest - visible, restrained motion for heroes and page content. */
+@keyframes fnArrive{0%{opacity:0;transform:translateY(42px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes fnSlideIn{0%{opacity:0;transform:translateX(45px) scale(.97)}100%{opacity:1;transform:translateX(0) scale(1)}}
+@keyframes fnBreathe{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes fnAccentLine{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}
+@media (prefers-reduced-motion:no-preference){
+  /* All public-page hero types, including the family-v2 custom hero */
+  .home-hero .eyebrow,.page-hero .eyebrow{animation:fnArrive .72s .08s cubic-bezier(.2,.75,.25,1) both!important}
+  .home-hero h1,.page-hero h1{animation:fnArrive .86s .19s cubic-bezier(.2,.75,.25,1) both!important}
+  .home-hero .hero-copy>p,.family-v2-copy>p,.page-hero .container>p{animation:fnArrive .86s .36s cubic-bezier(.2,.75,.25,1) both!important}
+  .home-hero .hero-actions,.family-v2-actions,.home-hero .cluster,.page-hero .btn{animation:fnArrive .86s .50s cubic-bezier(.2,.75,.25,1) both!important}
+  .home-hero .trust-row{animation:fnArrive .86s .65s cubic-bezier(.2,.75,.25,1) both!important}
+  .home-hero .hero-photo,.home-hero .family-v2-photo,.home-hero .family-hero-photo{animation:fnSlideIn 1.15s .22s cubic-bezier(.2,.75,.25,1) both!important}
+  .home-hero .hero-float,.home-hero .family-v2-photo figcaption{animation:fnBreathe 4s 1.5s ease-in-out infinite!important}
+  /* Scroll entrance: JS adds fn-observe only below the fold; no hidden content without JS. */
+  .fn-observe{opacity:0;transform:translateY(48px);transition:opacity .9s cubic-bezier(.2,.75,.25,1),transform .9s cubic-bezier(.2,.75,.25,1);transition-delay:var(--fn-delay,0ms);will-change:opacity,transform}
+  .fn-observe.fn-show{opacity:1;transform:none;will-change:auto}
+  .fn-observe.fn-show .eyebrow{color:var(--primary)}
+  .fn-observe.fn-show h2{animation:fnAccentLine .65s ease both}
+  /* Small, visible interaction cue on service/blog cards */
+  .service-card,.blog-card,.family-v2-service-grid .card{transition:transform .28s ease,box-shadow .28s ease}
+  .service-card:hover,.blog-card:hover,.family-v2-service-grid .card:hover{transform:translateY(-7px);box-shadow:var(--shadow-hover)}
+}
+@media (prefers-reduced-motion:reduce){.fn-observe{opacity:1!important;transform:none!important;transition:none!important}.home-hero .eyebrow,.home-hero h1,.home-hero p,.home-hero .hero-actions,.home-hero .trust-row,.home-hero .hero-photo,.page-hero *{animation:none!important}}
+
+</style><script defer src="assets/js/visible-motion.js"></script><style data-original-stylesheet="cross-device-polish.css">
+/* Final cross-device direction and contrast polish; intentionally scoped and additive. */
+:root{color-scheme:light}html.dark{color-scheme:dark}
+html,body{max-width:100%;}body{overflow-x:clip;overflow-wrap:break-word}
+.container,.dashboard-layout,.dash-content,.dash-main,.site-nav,.header-inner,.blog-grid,.blog-feature,.article-detail{min-width:0}
+img,video,iframe{max-width:100%}img{height:auto}button,input,select,textarea{max-width:100%;font:inherit}
+input,select,textarea{color:var(--text);background:var(--surface);border-color:var(--border)}
+input::placeholder,textarea::placeholder{color:var(--muted);opacity:1}
+:focus-visible{outline:3px solid var(--primary);outline-offset:3px}
+[dir=rtl] .site-nav,[dir=rtl] .footer-grid,[dir=rtl] .dash-content{text-align:start}
+[dir=rtl] .home-submenu{left:auto;right:0}
+[dir=rtl] .home-submenu a,[dir=rtl] .dropdown-panel a,[dir=rtl] .dropdown-panel button{text-align:start}
+[dir=rtl] .footer-links,[dir=rtl] .footer-address{text-align:start}
+/* Avoid cards, media and long text driving horizontal scroll. */
+.grid-2>*,.grid-3>*,.content-grid>*,.blog-grid>*,.pricing-grid>*,.leadership-grid>*,.split>*,.article-detail>*,.blog-feature>*{min-width:0}
+.blog-grid .blog-card>img{height:215px!important;width:100%;object-fit:cover}
+@media(max-width:900px){
+ .site-nav.is-open{max-height:calc(100dvh - 74px);overflow-y:auto;overscroll-behavior:contain}
+ .site-nav .nav-link,.site-nav .home-dropdown-trigger{min-height:42px;display:flex;align-items:center}
+ .home-submenu{position:static;max-width:100%}
+ [dir=rtl] .home-submenu{right:auto}
+}
+@media(max-width:700px){
+ .blog-featured-full .blog-feature{grid-template-columns:minmax(0,1fr)}
+ .blog-featured-full .blog-feature>img{min-width:0;max-height:none;height:auto;aspect-ratio:16/10;object-fit:cover}
+ .blog-grid{grid-template-columns:minmax(0,1fr)}
+ .article-detail,.leadership-grid{grid-template-columns:minmax(0,1fr)}
+ .card,.info-panel{max-width:100%}
+ .site-footer .footer-grid{min-width:0}
+}
+@media(max-width:450px){
+ .site-footer .footer-grid{grid-template-columns:minmax(0,1fr)}
+ .header-inner{min-width:0;gap:4px}
+ .brand-text{min-width:0}
+ .header-actions{gap:3px;flex-shrink:0}
+ .site-header [data-auth-slot]>.btn{white-space:nowrap}
+ .site-header .direction-toggle{min-width:37px}
+ .leader-card{gap:12px;padding:16px}
+ .leader-card img{width:72px;height:72px;flex-shrink:0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
+
+</style></head><body><div data-public-header=""></div><main id="main-content"><section class="section catalog-hero soft-surface"><div class="container"><span class="eyebrow">The FreshNest services catalogue</span><h1>Clean fabrics, clearer choices.</h1><p>Find the right treatment for your carpets, upholstery and everyday soft furnishings. Our technicians assess fiber type, existing damage and stain history before they choose a method. Starting prices are guides; your appointment quote reflects the actual size and condition.</p><div class="cluster"><a class="btn btn-accent" href="dashboard/book.html">Schedule a visit</a><a class="btn btn-outline" href="#fabric-guide">Check fabric suitability</a></div></div></section><section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Find your clean</span><h2>Choose a service that fits your space</h2><p>Use the categories or search by surface, stain or treatment. Each service includes an overview, typical visit duration and the minimum starting charge.</p></div><span class="badge" id="service-count" role="status">12 services</span></div><div class="catalog-tools"><div aria-label="Filter services by category" class="catalog-tabs" role="group"><button aria-pressed="true" class="filter-pill is-active" data-service-filter="All" type="button">All</button><button aria-pressed="false" class="filter-pill" data-service-filter="Carpet" type="button">Carpet</button><button aria-pressed="false" class="filter-pill" data-service-filter="Upholstery" type="button">Upholstery</button><button aria-pressed="false" class="filter-pill" data-service-filter="Specialty" type="button">Specialty</button></div><label class="catalog-search"><span>Search services</span><input autocomplete="off" class="input" id="service-search" placeholder="Try sofa, pet, stains..." type="search"/></label></div><div class="catalog-grid"><article class="catalog-card card reveal" data-group="Carpet" data-name="carpet deep extraction carpet fibers collect dust and tracked-in grit even when surfaces appear clean. our team vacuums, checks fiber type and treats visible stains before rinsing with controlled hot water extraction. careful passes remove suspended soil while minimizing overwetting. we finish by grooming the pile and explaining safe drying conditions." data-service-card=""><img alt="Professional service for Carpet and pile texture" height="520" loading="lazy" src="assets/images/catalog-carpet-care.webp" width="800"/><div class="catalog-card-body"><span class="badge">Carpet</span><h3>Carpet deep extraction</h3><p>Lift trapped dirt and everyday stains with fabric-safe hot water extraction. Finished with pile grooming and clear drying advice.</p><div class="catalog-meta"><strong>From Rs. 999</strong><span>60-90 min</span></div><div class="catalog-actions"><a class="btn btn-primary" href="dashboard/book.html?service=carpet">Book now</a><a class="btn btn-outline" href="service-details.html?service=carpet">Details</a></div></div></article><article class="catalog-card card reveal" data-group="Upholstery" data-name="sofa and upholstery cleaning sofas hold skin oils, food crumbs and fine dust around seams and armrests. we review the fabric care code, test an inconspicuous patch and select an appropriate low-moisture or extraction method. detachable cushions, seat panels and creases receive deliberate attention. we finish with ventilation and seating guidance tailored to the fabric." data-service-card=""><img alt="Professional service for Sectional sofa cushions" height="520" loading="lazy" src="assets/images/catalog-sofa-care.webp" width="800"/><div class="catalog-card-body"><span class="badge">Upholstery</span><h3>Sofa and upholstery cleaning</h3><p>Refresh sofas, cushions and armrests with a fabric-tested clean that targets dust, body oils and spills.</p><div class="catalog-meta"><strong>From Rs. 599</strong><span>60-120 min</span></div><div class="catalog-actions"><a class="btn btn-primary" href="dashboard/book.html?service=sofa">Book now</a><a class="btn btn-outline" href="service-details.html?service=sofa">Details</a></div></div></article><article class="catalog-card card reveal" data-group="Upholstery" data-name="mattress hygiene refresh mattresses gradually retain perspiration marks, dust and everyday odors. we inspect the material and use controlled upholstery-safe extraction only where suitable. edges, seams and the sleep surface receive focused treatment without saturating internal layers. allow a full dry before fitting sheets or sleeping on the mattress." data-service-card=""><img alt="Professional service for Mattress and pillows" height="520" loading="lazy" src="assets/images/catalog-mattress-care.webp" width="800"/><div class="catalog-card-body"><span class="badge">Upholstery</span><h3>Mattress hygiene refresh</h3><p>Clean suitable mattress surfaces and seams with controlled moisture to reduce everyday grime and odors.</p><div class="catalog-meta"><strong>From Rs. 1,299</strong><span>60-90 min</span></div><div class="catalog-actions"><a class="btn btn-primary" href="dashboard/book.html?service=mattress">Book now</a><a class="btn btn-outline" href="service-details.html?service=mattress">Details</a></div></div></article><article class="catalog-card card reveal" data-group="Carpet" data-name="area rug cleaning loose rugs need a different approach from fixed carpets because dyes, backing and fringes can be delicate. we test colorfastness, remove loose grit and determine whether in-home cleaning is safe. a measured rinse can refresh suitable synthetic or sturdy woven rugs. fragile silk, antique and specialty pieces may require specialist off-site care." data-service-card=""><img alt="Professional service for Woven rug" height="520" loading="lazy" src="assets/images/catalog-rug-care.webp" width="800"/><div class="catalog-card-body"><span class="badge">Carpet</span><h3>Area rug cleaning</h3><p>Refresh rugs after fiber and dye checks, with careful treatment of delicate edges and backing.</p><div class="catalog-meta"><strong>From Rs. 899</strong><span>45-90 min</span></div><div class="catalog-actions"><a class="btn btn-primary" href="dashboard/book.html?service=rug">Book now</a><a class="btn btn-outline" href="service-details.html?service=rug">Details</a></div></div></article><article class="catalog-card card reveal" data-group="Upholstery" data-name="curtain and drapery care curtains trap outdoor dust and cooking particles over time. our technician checks lining, pleats and shrinkage risks before deciding whether light in-place treatment is possible. suitable fabrics receive a gentle refresh, with special attention at hems and folds. some delicate drapes are best referred for professional dry cleaning." data-service-card=""><img alt="Professional service for Curtains in daylight" height="520" loading="lazy" src="assets/images/catalog-curtains-care.webp" width="800"/><div class="catalog-card-body"><span class="badge">Upholstery</span><h3>Curtain and drapery care</h3><p>Remove surface dust from suitable curtains after a lining and shrinkage assessment.</p><div class="catalog-meta"><strong>From Rs. 1,499</strong><span>90-150 min</span></div><div class="catalog-actions"><a class="btn btn-primary" href="dashboard/book.html?service=curtains">Book now</a><a class="btn btn-outline" href="service-details.html?service=curtains">Details</a></div></div></article><article class="catalog-card card reveal" data-group="Specialty" data-name="car interior fabric refresh seats, mats and door fabric pick up dust, spills and food odors during daily drives. we pre-vacuum crevices, treat visible marks and clean approved upholstery and carpeted footwells. excess moisture is extracted to help surfaces dry faster. drivers receive ventilation advice before using freshly treated seating." data-service-card=""><img alt="Professional service for Vehicle interior seats" height="520" loading="lazy" src="assets/images/catalog-car-care.webp" width="800"/><div class="catalog-card-body"><span class="badge">Specialty</span><h3>Car interior fabric refresh</h3><p>Clean car seats and fabric trims with targeted extraction and careful moisture control.</p><div class="catalog-meta"><strong>From Rs. 1,599</strong><span>90-150 min</span></div><div class="catalog-actions"><a class="btn btn-primary" href="dashboard/book.html?service=car">Book now</a><a class="btn btn-outline" href="service-details.html?service=car">Details</a></div></div></article><article class="catalog-card card reveal" data-group="Upholstery" data-name="office chair sanitizing clean desk chairs can accumulate dust and stains on seats, mesh and fabric backs. we inspect each chair type, pre-vacuum seams and use a material-appropriate solution and extraction method. chair arms and high-touch areas can be wiped separately. a batch schedule makes the service practical for offices and co-working spaces." data-service-card=""><img alt="Professional service for Office chair mesh" height="520" loading="lazy" src="assets/images/catalog-chairs-care.webp" width="800"/><div class="catalog-card-body"><span class="badge">Upholstery</span><h3>Office chair sanitizing clean</h3><p>Refresh office seating, including armrests and seat cushions, with fabric-appropriate treatment.</p><div class="catalog-meta"><strong>From Rs. 349</strong><span>30-45 min</span></div><div class="catalog-actions"><a class="btn btn-primary" href="dashboard/book.html?service=chairs">Book now</a><a class="btn btn-outline" href="service-details.html?service=chairs">Details</a></div></div></article><article class="catalog-card card reveal" data-group="Carpet" data-name="stair and landing carpet care carpeted steps collect concentrated wear at tread edges and corners. our team pre-treats the high-traffic zones and cleans each step with compact equipment. hand-detailing reaches corners that broad floor tools cannot. we recommend keeping stairs out of use until dry for better traction." data-service-card=""><img alt="Professional service for Carpeted staircase" height="520" loading="lazy" src="assets/images/catalog-stairs-care.webp" width="800"/><div class="catalog-card-body"><span class="badge">Carpet</span><h3>Stair and landing carpet care</h3><p>Lift tracked-in dirt from carpeted stairs, including step edges and high-traffic spots.</p><div class="catalog-meta"><strong>From Rs. 1,199</strong><span>75-120 min</span></div><div class="catalog-actions"><a class="btn btn-primary" href="dashboard/book.html?service=stairs">Book now</a><a class="btn btn-outline" href="service-details.html?service=stairs">Details</a></div></div></article><article class="catalog-card card reveal" data-group="Specialty" data-name="pet odor and urine treatment pet accidents may soak beneath the visible fabric surface and create recurring odors. we inspect and identify affected areas before applying a targeted odor treatment where the material allows. extraction removes loosened residues while protecting delicate backing where possible. long-standing contamination or damaged underlay may require additional work and is not always fully removable." data-service-card=""><img alt="Professional service for Pet friendly floor" height="520" loading="lazy" src="assets/images/catalog-pet-care.webp" width="800"/><div class="catalog-card-body"><span class="badge">Specialty</span><h3>Pet odor and urine treatment</h3><p>Target pet-related odors and affected fibers with an inspection-led pretreatment and clean.</p><div class="catalog-meta"><strong>From Rs. 799</strong><span>45-90 min</span></div><div class="catalog-actions"><a class="btn btn-primary" href="dashboard/book.html?service=pet">Book now</a><a class="btn btn-outline" href="service-details.html?service=pet">Details</a></div></div></article><article class="catalog-card card reveal" data-group="Specialty" data-name="stain rescue spot treatment coffee, tea, food and makeup stains respond differently depending on fiber and age. we assess the spill history, test a hidden area and choose a stain-specific pre-treatment. a controlled rinse helps remove both the mark and treatment residue. permanent dye changes, bleaching and set-in stains cannot be guaranteed to disappear." data-service-card=""><img alt="Professional service for Coffee spill cleaning" height="520" loading="lazy" src="assets/images/catalog-spot-care.webp" width="800"/><div class="catalog-card-body"><span class="badge">Specialty</span><h3>Stain rescue spot treatment</h3><p>Treat common spills and spots using surface-tested methods, with realistic stain-removal advice.</p><div class="catalog-meta"><strong>From Rs. 499</strong><span>25-45 min</span></div><div class="catalog-actions"><a class="btn btn-primary" href="dashboard/book.html?service=spot">Book now</a><a class="btn btn-outline" href="service-details.html?service=spot">Details</a></div></div></article><article class="catalog-card card reveal" data-group="Specialty" data-name="fabric protector application a compatible protector can help slow absorption of future spills and make routine blotting easier. we test the fabric and apply an even coating only after appropriate cleaning and drying checks. the treatment needs a cure period before normal use. it is not waterproofing and does not prevent every stain." data-service-card=""><img alt="Professional service for Fabric protectant drops" height="520" loading="lazy" src="assets/images/catalog-protector-care.webp" width="800"/><div class="catalog-card-body"><span class="badge">Specialty</span><h3>Fabric protector application</h3><p>Help suitable fabrics resist future spills with a protective treatment after professional cleaning.</p><div class="catalog-meta"><strong>From Rs. 699</strong><span>30-60 min</span></div><div class="catalog-actions"><a class="btn btn-primary" href="dashboard/book.html?service=protector">Book now</a><a class="btn btn-outline" href="service-details.html?service=protector">Details</a></div></div></article><article class="catalog-card card reveal" data-group="Specialty" data-name="quick-dry finishing service when a busy household needs furniture back in use sooner, controlled airflow can help reduce surface drying time. we combine additional extraction passes with safe air movement based on room conditions. this is an add-on to a compatible cleaning appointment, not an instant-dry guarantee. drying speed still varies with humidity, material and ventilation." data-service-card=""><img alt="Professional service for Air mover and clean carpet" height="520" loading="lazy" src="assets/images/catalog-express-care.webp" width="800"/><div class="catalog-card-body"><span class="badge">Specialty</span><h3>Quick-dry finishing service</h3><p>Reduce waiting time with focused extraction and airflow guidance, subject to fabric type.</p><div class="catalog-meta"><strong>From Rs. 599</strong><span>30-60 min</span></div><div class="catalog-actions"><a class="btn btn-primary" href="dashboard/book.html?service=express">Book now</a><a class="btn btn-outline" href="service-details.html?service=express">Details</a></div></div></article></div><p class="empty-services" hidden="" id="empty-services" role="status">No services match your search. Try a different term or choose All.</p></div></section><section class="section soft-surface" id="fabric-guide"><div class="container"><div class="section-head"><div><span class="eyebrow">Before we begin</span><h2>What fabrics can we clean?</h2><p>The label and fiber content matter as much as the stain. Here is how we approach common materials, with testing and safe alternatives when extraction is unsuitable.</p></div></div><div class="fabric-grid"><article class="fabric-card"><h3>Synthetic carpet and microfiber</h3><p>Polyester, nylon and many microfiber surfaces are often good candidates for controlled extraction. We test the color and backing, check shrinkage risks and avoid over-saturating the material.</p><span class="badge">Often suitable after testing</span></article><article class="fabric-card"><h3>Cotton and linen blends</h3><p>Natural blends can hold water, crease and show rings if over-wet. Care-code checks and a hidden-spot trial help us decide whether careful low-moisture cleaning is more appropriate.</p><span class="badge">Requires extra care</span></article><article class="fabric-card"><h3>Wool and delicate rugs</h3><p>Wool reacts differently to heat, alkalinity and agitation. We avoid routine high-temperature cleaning and recommend specialist rug cleaning for delicate dyes, fringe, silk or antique pieces.</p><span class="badge">Specialist assessment</span></article><article class="fabric-card"><h3>Leather, velvet and dry-clean-only</h3><p>Standard steam extraction is not suitable for every covering. We follow care labels and explain when a dedicated leather treatment, dry-cleaning process or external specialist is safer.</p><span class="badge">Method depends on label</span></article></div></div></section><section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Know the difference</span><h2>Professional extraction versus a DIY machine</h2><p>Home machines can help between appointments. Professional care brings material checks, targeted pre-treatment and a careful drying plan for more complex jobs.</p></div></div><div class="compare-scroll"><table class="comparison-table"><thead><tr><th scope="col">What matters</th><th scope="col">FreshNest process</th><th scope="col">Typical DIY approach</th></tr></thead><tbody><tr><th scope="row">Material assessment</th><td>Care codes, fiber testing and known damage checked first</td><td>Often depends on user's machine instructions</td></tr><tr><th scope="row">Spot treatment</th><td>Selected for stain history and tested on a hidden patch</td><td>General-purpose cleaning solution may be used</td></tr><tr><th scope="row">Soil extraction</th><td>Technician controls agitation, rinsing and recovery passes</td><td>Varies with equipment, technique and tank maintenance</td></tr><tr><th scope="row">Drying plan</th><td>Guidance based on material, moisture and ventilation</td><td>Often left to open windows or available fans</td></tr><tr><th scope="row">Risk management</th><td>Unsuitable fabrics referred to alternatives</td><td>Incorrect settings can cause overwetting or dye transfer</td></tr></tbody></table></div><p class="catalog-note">Outcomes depend on fabric construction and stain age. Deep cleaning does not guarantee complete stain or odor removal.</p></div></section><section class="section"><div class="container"><div class="service-cta"><div><span class="eyebrow">Personalized care, without guesswork</span><h2>Not sure which service to choose?</h2><p>Tell us about your fabric, approximate size and the main concern. We will help identify a suitable treatment and explain how to prepare before the appointment.</p><div class="cluster"><a class="btn btn-accent" href="dashboard/book.html">Book a cleaning</a><a class="btn btn-outline" href="contact.html">Ask a fabric question</a></div></div><div class="cta-facts"><strong>Before your visit</strong><p>Move small breakables away from the area, keep pets secure, and share photos of any fragile fabric or stain. Most suitable surfaces need roughly 4-6 hours to dry, depending on airflow and material.</p><strong>After the visit</strong><p>Our team explains ventilation, foot traffic and how to report a concern under the 7-day re-clean policy.</p></div></div></div></section></main><div data-public-footer=""></div></body></html>
